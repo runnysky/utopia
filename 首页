@@ -1,0 +1,135 @@
+***
+#首页接口
+***
+* URI `GET	/client/index`
+* 参数
+	
+	<table border="1">
+	<tr>
+		<th>parameter</th><th>necessary</th><th>description</th><th>value</th>
+	</tr>
+    <tr>
+    	<td>logintype</td><td>Y</td><td>是否登录</td><td>0：未登录，1：QQ，2:微信</td>
+    </tr>
+	<tr>
+    	<td>openid</td><td>Y</td><td>openid</td><td></td>
+    </tr>
+	<tr>
+    	<td>access_token</td><td>Y</td><td>access_token</td><td></td>
+    </tr>
+	<tr>
+    	<td>deviceid</td><td>Y</td><td>设备id</td><td></td>
+    </tr>
+	</table>
+* 返回数据
+	* 部分字段说明
+		* `wtype`:天气类型 （后续提供）
+		* `passport`:护照类型 0未登录，1普通，2会员
+		* `freetime`:免费时间
+		* `memberurl`:权限不足时提示充会员的页面
+		* `refresh`:截图频率
+		* `event::type`:活动的类型 1竞猜，2解锁，3投票
+		* `liveid::super`:超清
+		* `liveid::high`:高清
+		* `liveid::normal`:普清
+***
+
+
+
+		{
+		    "code": 0,
+		    "info": "",
+		    "data": {
+				"day":329,
+				"wtype":1,
+				"money":4356,
+		        "visitornum":34011,
+				"temperature":24,
+				"passport":0,
+				"freetime":300,
+				"memberurl":"http://asdfas",
+				"refresh":30,
+				"event":[{
+					"eventid":1231231,
+					"type":1,
+					"url":"http://asdfas",
+					"title":"这是一个活动",
+					"num":123
+				},{
+					"eventid":1231231,
+					"type":1,
+					"url":"http://asdfas",
+					"title":"这是一个活动",
+					"num":123
+				},{
+					"eventid":1231231,
+					"type":1,
+					"url":"http://asdfas",
+					"title":"这是一个活动",
+					"num":123
+				}],
+				"default":{
+					"topicid":132132,
+					"title":"这是默认入口",
+					"url":"http://asdfas",
+					"num":123
+				},
+				"list":[{
+					"utpgid":2123,
+					"liveid":{
+						"super":1231232132,
+						"high":123123123,
+						"normal":123123213
+					},
+					"pic":"",
+					"type":1
+				},{
+					"utpgid":2123,
+					"liveid":{
+						"super":1231232132,
+						"high":123123123,
+						"normal":123123213
+					},
+					"pic":"",
+					"type":1
+				},{
+					"utpgid":2123,
+					"liveid":{
+						"super":1231232132,
+						"high":123123123,
+						"normal":123123213
+					},
+					"pic":"",
+					"type":1
+				},{
+					"utpgid":2123,
+					"liveid":{
+						"super":1231232132,
+						"high":123123123,
+						"normal":123123213
+					},
+					"pic":"",
+					"type":1
+				},{
+					"utpgid":2123,
+					"liveid":{
+						"super":1231232132,
+						"high":123123123,
+						"normal":123123213
+					},
+					"pic":"",
+					"type":1
+				},{
+					"utpgid":2123,
+					"liveid":{
+						"super":1231232132,
+						"high":123123123,
+						"normal":123123213
+					},
+					"pic":"",
+					"type":1
+				}]
+		    }
+		} 
+
+***
